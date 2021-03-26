@@ -1,4 +1,4 @@
-# DesignCourse HTML & CSS Mobile-First Webiste (Refresher) 🌐 
+# DesignCourse HTML & CSS Mobile-First Website (Refresher) 🌐 
 
 ```sh 
 Current project status: In Progress. ⌛  
@@ -18,7 +18,7 @@ Upcoming Code Demo ⌛
 
 # ~ Project Previews: 🖼️
 
-Main App |  Searching |
+Main Screen |  Second Screen |
 |:-----------:|:-----------:|
 ![](https://designshack.net/wp-content/uploads/placeholder-image.png) | ![](https://designshack.net/wp-content/uploads/placeholder-image.png) |
 
