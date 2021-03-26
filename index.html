@@ -7,5 +7,139 @@
     <title>Mobile-First Design - HTML & CSS</title>
     <link rel="stylesheet" href="./css/main.css" />
   </head>
-  <body></body>
+  <body>
+    <div class="navbar">
+      <div class="container">
+        <a href="#">Remember<span>That</span></a>
+        <img
+          id="mobile-cta"
+          class="mobile-menu"
+          src="./assets/menu.svg"
+          alt="Open Navigation"
+        />
+        <nav>
+          <img
+            id="mobile-exit"
+            class="mobile-exit-menu"
+            src="./assets/exit.svg"
+            alt="Close Navigation"
+          />
+          <ul class="primary-nav">
+            <li class="current"><a href="#">Home</a></li>
+            <li><a href="#">Features</a></li>
+            <li><a href="#">Pricing</a></li>
+          </ul>
+          <ul class="secondary-nav">
+            <li><a href="#">Contact</a></li>
+            <li class="go-premium-btn"><a href="#">Go Premium</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+    <section class="hero">
+      <div class="container">
+        <div class="left-col">
+          <p class="subhead">It's Knitty and &amp; Gritty</p>
+          <h1>A Task App That's Not Boring.</h1>
+          <div class="hero-cta">
+            <a href="#" class="primary-cta">Try for free</a>
+            <a href="#" class="watch-video-cta">
+              <img src="./assets/watch.svg" alt="Watch Video" />
+              Watch a video
+            </a>
+          </div>
+        </div>
+        <img
+          class="hero-img"
+          src="./assets/illustration.svg"
+          alt="Illustration"
+        />
+      </div>
+    </section>
+    <section class="features">
+      <div class="container">
+        <ul>
+          <li>Unlimited Tasks</li>
+          <li>SMS Task Reminders</li>
+          <li>Confetti Explosions upon Task Completion</li>
+          <li>Social Annoucements</li>
+          <li>Realtime Collaboration</li>
+          <li>Other awesome features</li>
+        </ul>
+        <img src="./assets/holding-phone.jpg" alt="Person holding a phone" />
+      </div>
+    </section>
+    <section class="testimonials">
+      <div class="container">
+        <ul>
+          <li>
+            <img src="./assets/person.jpg" alt="Person" />
+            <blockquote>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo
+              itaque delectus quibusdam, numquam corporis maxime ea pariatur
+              possimus quae velit, adipisci consequuntur natus, facere facilis
+              sit accusamus eos eligendi repellendus.
+            </blockquote>
+            <cite>- Jamie Doe</cite>
+          </li>
+          <li>
+            <img src="./assets/person.jpg" alt="Person" />
+            <blockquote>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis
+              rem at ducimus, nemo non eius distinctio asperiores minus ratione
+              est delectus quod fugit praesentium illo repudiandae corporis
+              facere placeat provident.
+            </blockquote>
+            <cite>- June Doe</cite>
+          </li>
+          <li>
+            <img src="./assets/person.jpg" alt="Person" />
+            <blockquote>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore
+              eos quas facere qui, possimus quis molestias corrupti iusto
+              veritatis officia. Placeat non fugit tempora, expedita illo et
+              maxime sit fugiat!
+            </blockquote>
+            <cite>- Joseph Doe</cite>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <div class="section contact">
+      <div class="container">
+        <div class="contact-left">
+          <h2>Contact Us</h2>
+          <form>
+            <label for="name">Name: </label>
+            <input type="text" id="name" name="name" />
+            <label for="email">Email: </label>
+            <input type="email" id="email" name="email" />
+            <label for="message">Message: </label>
+            <textarea
+              placeholder="Write your message..."
+              name="message"
+              id="message"
+              cols="30"
+              rows="10"
+            ></textarea>
+            <input
+              class="send-message-cta"
+              type="submit"
+              value="Send Message"
+            />
+          </form>
+        </div>
+        <div class="contact-right">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d83327.3577568717!2d-123.193944225624!3d49.25782632080659!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x548673f143a94fb3%3A0xbb9196ea9b81f38b!2sVancouver%2C%20BC%2C%20Canada!5e0!3m2!1sen!2sdo!4v1616781937837!5m2!1sen!2sdo"
+            width="600"
+            height="450"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+          ></iframe>
+        </div>
+      </div>
+    </div>
+  </body>
 </html>
