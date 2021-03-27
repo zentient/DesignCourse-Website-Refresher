@@ -18,6 +18,12 @@
   src: url("../assets/Poppins-Bold.ttf");
 }
 
+/* Global Styling */
+
+* {
+  transition: all 0.3s ease 0s;
+}
+
 /* Content */
 
 body {
@@ -121,6 +127,8 @@ section {
 ul.features-list {
   margin: 0;
   padding-left: 0.1em;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(19rem, 1fr));
 
   li {
     font-size: 1.1em;
@@ -184,6 +192,7 @@ textarea {
   margin-bottom: 1em;
   border-radius: 0.3em;
   box-sizing: border-box;
+  font-family: "Poppins";
   border: 1px solid grey;
 }
 
@@ -246,4 +255,176 @@ nav {
   float: right;
   margin: 0.5em;
   cursor: pointer;
+}
+
+/* Media Queries */
+@media only screen and (min-width: 768px) {
+  .mobile-menu,
+  .mobile-menu-exit {
+    display: none;
+  }
+
+  .navbar .container {
+    display: grid;
+    grid-template-columns: 180px auto;
+    justify-content: unset;
+  }
+
+  .navbar nav {
+    display: flex;
+    justify-content: space-between;
+    background: none;
+    position: unset;
+    height: auto;
+    width: 100%;
+    padding: 0;
+
+    ul {
+      display: flex;
+    }
+
+    a {
+      color: black;
+      font-size: 1em;
+      padding: 0.1em 1em;
+    }
+
+    ul.primary-nav {
+      margin: 0;
+    }
+
+    li.current a {
+      font-weight: bold;
+    }
+
+    li.go-premium-cta a {
+      color: var(--blue);
+      border: 3px solid var(--blue);
+      font-weight: bold;
+      border-radius: 5em;
+      margin-top: -0.2em;
+
+      &:hover {
+        background-color: var(--blue);
+        color: white;
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 1080px) {
+  .container {
+    width: 1080px;
+    margin: 0 auto;
+  }
+
+  section {
+    padding: 10em 4em;
+  }
+
+  .hero .container {
+    display: flex;
+    justify-content: space-between;
+    text-align: left;
+
+    .left-col {
+      margin: 3em 3em 0 5em;
+
+      h1 {
+        font-size: 3em;
+        width: 90%;
+      }
+    }
+  }
+
+  .hero-img {
+    width: 30%;
+    margin-right: 8em;
+  }
+
+  .hero-cta {
+    display: flex;
+  }
+
+  .primary-cta {
+    margin-right: 1em;
+  }
+
+  ul.features-list {
+    display: block;
+    margin-left: 5em;
+
+    li {
+      font-size: 1.4em;
+
+      &:before {
+        width: 30px;
+        height: 30px;
+      }
+    }
+  }
+
+  .features {
+    position: relative;
+  }
+
+  .features img {
+    display: block;
+    position: absolute;
+    right: 0;
+    width: 350px;
+    bottom: -2em;
+  }
+
+  .testimonials ul {
+    display: flex;
+
+    li {
+      margin: 0 1em;
+    }
+  }
+
+  .contact {
+    position: relative;
+
+    .container {
+      display: flex;
+    }
+
+    .contact-right {
+      position: absolute;
+      right: 0;
+      top: 0;
+      width: 50%;
+      height: 100%;
+
+      iframe {
+        height: 100%;
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 1450px) {
+  .features {
+    &:before {
+      content: "";
+      position: absolute;
+      width: 10%;
+      height: 20em;
+      background-color: var(--blue);
+      left: 0;
+      top: -4em;
+    }
+
+    &:after {
+        content: "";
+        position: absolute;
+        width: 10%;
+        height: 20em;
+        background: url('../assets/dots.svg') no-repeat;
+        left: 4.5em;
+        top: 2em;
+      }
+  }
 }
