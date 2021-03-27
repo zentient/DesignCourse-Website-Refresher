@@ -1,7 +1,7 @@
 # DesignCourse HTML & CSS Mobile-First Website (Refresher) 🌐
 
 ```sh
-Current project status: In Progress. ⌛
+Current project status: Completed. ✅
 ```
 
 This is a responsive website to get a refresher on HTML & CSS, along with dynamic styling with Sass and mobile-first approach when it comes to designing a website.
@@ -35,8 +35,8 @@ HTML code block taken from Google Maps embed section from a selected location:
 
 |               Main Screen                |               Sections                |
 | :--------------------------------------: | :-----------------------------------: |
-| ![](./previews/desktop-main-screen.png)) | ![](./previews/desktop-sections.png)) |
+| ![](./previews/desktop-main-screen.png) | ![](./previews/desktop-sections.png) |
 
 |               Cards                |               Contact                |
 | :--------------------------------: | :----------------------------------: |
-| ![](./previews/desktop-cards.png)) | ![](./previews/desktop-contact.png)) |
+| ![](./previews/desktop-cards.png) | ![](./previews/desktop-contact.png) |
